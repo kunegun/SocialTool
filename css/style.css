@@ -1,0 +1,145 @@
+html{
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color:#4c4c4c;
+  min-width: 800px;
+}
+
+
+/*////////////////////HEADER ////////////////////////////*/
+#header{
+  top: 0;
+  padding: 0 5%;
+  width: auto;
+  height: 110px;
+  background: #eaeaea;
+}
+.logo{
+  display: inline-block;
+  vertical-align: top;
+}
+.logo a{
+  background: url(../img/logo-socialtool512.png) 0 -15px no-repeat;
+  width: 130px;
+  height: 105px;
+  display: block;
+  background-size: cover;
+  text-indent: -9999px;
+}
+.menu{
+  display: inline-block;
+  float: right;
+  padding: 20px 0;
+}
+.menu ul li{
+  display: inline-block;
+  padding:0 20px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color:#4c4c4c;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.menu ul li a:hover{
+  color:#FFF;
+}
+
+/*///////////////////// CONTAINER /////////////////*/
+
+
+#container{
+  padding: 0 10%;
+  height: 80%;
+  background: url(../img/bg-trans.png) no-repeat center top;
+}
+.titular{
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+}
+h3{
+  font-family: 'Open Sans', sans-serif;
+  color:#96BD0D;
+  width: 300px;
+  display: inline-block;
+}
+h5{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color:#009F95;
+}
+#datos{
+  display: inline-block;
+  vertical-align: top;
+  padding:45px;
+}
+#datos span, #datos img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  color:#4c4c4c;
+}
+.brands{
+  float:left;
+  display:inline-block;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+}
+.twitter{
+  text-align: center;
+  width: 150px;
+}
+.facebook, .instagram{
+  text-align: center;
+}
+.brands li{
+  display: block;
+  height: 58px;
+}
+.brands li td{
+  width: 100px;
+}
+.tb_compet{
+  display: inline-block;
+  float: right;
+}
+
+
+/*////////////////////FOOTER //////////////*/
+#footer{
+  background: #4c4c4c;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 5%;
+}
+h6{
+  color: #f2f2f2;
+  font-size: 10px;
+  margin: 10px 0;
+}
+#footer a{
+  text-decoration: none;
+  color:#96BD0D;
+}
+
+.nohtml{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+width: 300px;
+display: inline-block;
+}
+
