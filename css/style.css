@@ -2,18 +2,22 @@ html{
   height: 100%;
 }
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  min-width: 800px;
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
   color:#4c4c4c;
-  min-width: 800px;
+  font-family: 'Open Sans', sans-serif;
+}
+#main{
+  height: 100%;
 }
 
 
 /*////////////////////HEADER ////////////////////////////*/
 #header{
+  position: relative;
   top: 0;
   padding: 0 5%;
   width: auto;
@@ -25,78 +29,135 @@ body {
   vertical-align: top;
 }
 .logo a{
-  background: url(../img/logo-socialtool512.png) 0 -15px no-repeat;
+  display: block;
   width: 130px;
   height: 105px;
-  display: block;
+  background: url(../img/logo-socialtool512.png) 0 -15px no-repeat;
   background-size: cover;
   text-indent: -9999px;
 }
 .menu{
+  position: absolute;
+  right: 0;
   display: inline-block;
-  float: right;
-  padding: 20px 0;
+  padding: 20px 5%;
+}
+.menu ul{
+  padding: 0;
 }
 .menu ul li{
   display: inline-block;
-  padding:0 20px;
+  padding:0 5px;
+  vertical-align: middle;
 }
 .menu ul li a{
-  text-decoration: none;
   color:#4c4c4c;
-  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 .menu ul li a:hover{
   color:#FFF;
+}
+.menu ul li a.active{
+  color:#96BD0D;
+}
+.menu ul li a.connect-fb {
+  display: block;
+  width: 50px;
+  height: 48px;
+  background: url(../img/social-icons.png) 0 1px no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+.menu ul li a.connect-instag {
+  display: block;
+  width: 50px;
+  height: 48px;
+  background: url(../img/social-icons.png) no-repeat;
+  background-position: 0 -48px;
+  background-size: cover;
+  text-indent: -9999px;
+}
+.menu ul li a.connect-instag:hover, .menu ul li a.connect-fb:hover, .menu ul li a.logged{
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: rgba(0, 159, 149, .2);
 }
 
 /*///////////////////// CONTAINER /////////////////*/
 
 
 #container{
-  padding: 0 10%;
-  height: 80%;
-  background: url(../img/bg-trans.png) no-repeat center top;
+  margin-bottom: 50px;
+  padding: 0 6%;
+  min-height: 600px;
+  height: auto;
+  background: url(../img/bg-trans.png) no-repeat center 25%;
 }
 .titular{
-  width: 250px;
   display: inline-block;
+  width: 350px;
   vertical-align: top;
 }
+.titular p{
+  font-size: 0.7em;
+}
 h3{
-  font-family: 'Open Sans', sans-serif;
-  color:#96BD0D;
-  width: 300px;
   display: inline-block;
+  width: 350px;
+  color:#96BD0D;
+  font-family: 'Open Sans', sans-serif;
+}
+h3.competencial{
+  margin: 0 0 20px;
 }
 h5{
   margin: 0;
   padding: 0;
-  font-size: 18px;
   color:#009F95;
+  font-size: 18px;
+}
+#botones{
+  margin: 20px 0;
+  padding: 1em;
+  border: 5px dashed #009F95;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(150, 189, 13,.9);
+}
+#botones button{
+    width: 145px;
+  color: #4c4c4c;
+  font-family: 'Open Sans', sans-serif;
+cursor: pointer;
+}
+#botones form{
+  margin: 15px 0;
 }
 #datos{
   display: inline-block;
+  padding: 20px 0 0 60px;
   vertical-align: top;
-  padding:45px;
 }
 #datos span, #datos img{
   display: inline-block;
-  vertical-align: middle;
   margin-left: 20px;
   color:#4c4c4c;
+  vertical-align: middle;
 }
 .brands{
-  float:left;
   display:inline-block;
+  float:left;
   margin: 0;
   padding: 0;
   width: 250px;
 }
 .twitter{
-  text-align: center;
   width: 150px;
+  text-align: center;
 }
 .facebook, .instagram{
   text-align: center;
@@ -112,34 +173,72 @@ h5{
   display: inline-block;
   float: right;
 }
+/*////////////////////// MODIFICAR /////////////////////*/
+
+#addform{
+  display:none;
+}
+
+#sortable {
+  margin: 0;
+  padding: 0;
+  width: 75%;
+  list-style-type: none;
+}
+#sortable li {
+  margin-bottom: 0.3em;
+  padding: 0.3em 0.3em 0.3em 1.3em;
+  font-size: 1.1em;
+}
+#sortable li span {
+  position: absolute;
+  margin: 0.3em 0 0 -1.3em;
+}
+
+#datos a.borrar span{
+  position: relative;
+  float: right;
+}
+#sortable .ui-state-default{
+  border: none;
+  border-radius: 10px 0;
+  background-position: 46% 46%;
+}
+
+/*////////////////////////// NUEVO //////////////////////*/
+
+.competencial{
+  display: block!important;
+}
 
 
 /*////////////////////FOOTER //////////////*/
 #footer{
-  background: #4c4c4c;
   position: fixed;
   bottom: 0;
+  display: block;
+  padding: 2px 5%;
   width: 100%;
-  padding: 0 5%;
+  background: #4c4c4c;
 }
 h6{
+  margin: 10px 0;
   color: #f2f2f2;
   font-size: 10px;
-  margin: 10px 0;
 }
 #footer a{
-  text-decoration: none;
   color:#96BD0D;
+  text-decoration: none;
 }
 
 .nohtml{
+display: inline-block;
+width: 300px;
 -webkit-touch-callout: none;
 -webkit-user-select: none;
 -khtml-user-select: none;
 -moz-user-select: none;
 -ms-user-select: none;
 user-select: none;
-width: 300px;
-display: inline-block;
 }
 

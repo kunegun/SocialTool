@@ -55,7 +55,9 @@ function mostrarCompetencial(cod){
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
             $("#container").css("background","none");
+            compete = $('.competencial').text();
             document.getElementById("sortable").innerHTML=xmlhttp.responseText;
+            borrar();
 
         }else{
             document.getElementById("sortable").innerHTML="<img src=\"img/ajax-loader.gif\" /> <span>Cargando...</span>";

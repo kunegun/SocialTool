@@ -29,6 +29,7 @@
     <![endif]-->
   </head>
   <body>
+    <div id="main">
     <?php include 'header.php'; ?>
 
     <div id="container">
@@ -58,7 +59,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/consulta_ajax.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed
-    <script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+  </div>
   </body>
 </html>
